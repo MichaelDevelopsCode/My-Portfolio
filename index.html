@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Miguel Arvelo's Portfolio for web development">
+        <meta name="author" content="Miguel Arvelo">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="index.css">
+        <title>Miguel's Portfolio</title>
+    </head>
+
+    <body>
+
+        <!-- Top of Page -->
+        <section class="topBg">
+            <div class="topWrapper">
+
+                <!-- Logo -->
+                <img class="logo" style="max-width:100%; height:auto;" src="./imgs/logo.png" alt="logo"/>
+
+                <!-- Heading-->
+                <h1>Front-end Developer</h1>
+                <div class="container">
+                    <div class="text"></div>
+                </div>
+                <br/>
+                <br/>
+
+                <!-- Navigation / Tabs -->
+                <nav class="tab">
+                    <button class="tablinks active" onclick="openTab(event, 'About')"><a>About</a></li>
+                    <button class="tablinks" onclick="openTab(event, 'Work')"><a>Work</a></li>
+                    <button class="tablinks" onclick="openTab(event, 'Contact')"><a>Contact</a></li>
+                </nav>
+
+            </div>
+        </section>
+
+        <!-- About/Work/Contact Tab -->
+        <div id="About" class="tabcontent" style="display: block">
+            <h3>👋🏼 Hey! I'm Miguel Arvelo, a software developer and designer.</h3>
+            <p>My focus area is front-end development. I am well-versed in HTML, JavaScript, CSS, and Reactjs. I am a junior web developer who is passionate about developing and learning as much as I can. I enjoy what I do as well as putting my skills to the test, troubleshooting problems, and coming up with solutions. </p>
+            <p>I currently reside in Altamonte Springs, Florida. I attend college (part time as to maintain a full time job), working on my bachelors in computer science.</p>
+        </div>
+        
+        <div id="Work" class="tabcontent">
+            <h3>Work & Experience</h3>
+            <p>I have been coding and learning for almost two years. After my first year of learning I landed an internship with <a href="https://www.cubic.com/">Cubic Global Defense</a> as a web developer. Here I would come to see my desire and passion to learn and constantly improve as much as I could. The internship was suppose to last 3 months but due to excellent work ethic and improvement in skill I have extended it twice, now reaching my 9th month. I am also a part time student in Seminole State College so I have completed a handful of computer development classes including JavaScript, HTML, CSS, java, and more.</p> 
+        </div>
+        
+        <div id="Contact" class="tabcontent">
+            <h3>Contact me</h3>
+            <p>Have work for me?
+                <br/>
+                You can reach me by phone: <a class="contact" href="tel:14079632618">(407) 963-2618</a>
+                <br/>
+                Also by email: <a class="contact" href="mailto:michaelizmiguel@gmail.com">michaelizmiguel@gmail.com</a>
+            </p>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./index.js" ></script>
+
+
+        <footer>
+            <p>&copy Made by Miguel Arvelo, 2018</p>
+        </footer>
+    </body>
+
+</html>

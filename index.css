@@ -1,0 +1,134 @@
+/*--- Fonts --------------------------- */
+
+@font-face { font-family: "maisonNeue"; src: url('./fonts/MaisonNeue-Light.woff'); }
+@font-face { font-family: "maisonNeue"; font-weight: bold; src: url('./fonts/MaisonNeue-Bold.woff'); }
+
+
+/*--- Tags --------------------------- */
+body {
+    background: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size:20px;
+    color: white;
+    font-family: "maisonNeue", sans-serif;
+}
+
+li {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    padding-bottom: 13px;
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    }
+
+/*--- The animation code --------------------------- */
+@keyframes logo {
+    0% {left: 100%;}
+
+    100% {left: 0%}
+  }
+
+@keyframes tabs {
+    0% {left: 100%;}
+    70% {left: -2%;}
+    80% {left: 2%;}
+    90% {left: -1%;}
+    100% {left: 0%}
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+/*--- Top half: logo, header and tab buttons --------------------------- */
+.logo {
+    cursor:pointer;
+    position: relative;
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+}
+
+.topBg {
+    width: 100%;
+    background-color: #1D2636;
+    text-align: center;
+}
+
+.topWrapper {
+    width: 80%;
+    max-width:820px;
+    padding:80px 10% 0 10%;
+    margin:0px auto;
+}
+
+
+.tab button {
+    padding: 8px 40px 15px 40px;
+    height: 31px;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: .5s;
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+.tab button:hover {
+    background: white;
+    color: #1D2636;
+    box-shadow: 0 0 18px 0px white;
+    cursor: pointer;
+}
+
+.tab button:focus {
+    outline: 0;
+}
+
+.tab button.active {
+    background: white;
+    color: #1D2636;
+    box-shadow: 0 0 18px 0 white;
+}
+  
+/*--- Tab Content --------------------------- */
+.tabcontent {
+    display: none;
+    margin: 40px 60px 0 60px;
+    padding: 0 100px;
+    color: black;
+    text-align: auto;
+    line-height: 52px;
+    animation-name: tabs;
+    animation-duration: 1.5s;
+    position: relative;
+}
+
+.contact {
+    color: #1d2636;
+}
+
