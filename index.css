@@ -159,6 +159,9 @@ footer {
         font-size: 18px;
     }
 
+    .tab {
+        display: flex;
+    }
     .logos {
         width: 45%;
     }
@@ -177,4 +180,5 @@ footer {
     .tab button{
         padding: 8px 25px 7px 29px;
     }
+
 }
