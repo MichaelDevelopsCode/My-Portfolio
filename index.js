@@ -83,11 +83,11 @@ TextScramble = function () {
 // ——————————————————————————————————————————————————
 
 var phrases = [
-'Experienced in:',
 'HTML',
 'JavaScript',
 'CSS',
-'React.js' ];
+'React.js',
+'Java' ];
 
 
 var el = document.querySelector('.text');
